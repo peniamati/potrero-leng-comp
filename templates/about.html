@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    
+<!-- Sección de "Sobre Nosotros" -->
+<div class="container my-3 sobre-nosotros">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1 class="display-4">Sobre Nosotros</h1>
+            <p class="lead">Conoce nuestra misión, visión y equipo.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Nuestra Misión -->
+        <div class="col-md-4">
+            <h2>Misión</h2>
+            <p>Nuestra misión es ofrecer cursos de alta calidad, accesibles para todos, con una experiencia de aprendizaje flexible y personalizada.</p>
+        </div>
+        <!-- Nuestra Visión -->
+        <div class="col-md-4">
+            <h2>Visión</h2>
+            <p>Aspiramos a ser una plataforma líder en educación online, ayudando a personas de todo el mundo a alcanzar sus objetivos profesionales y personales.</p>
+        </div>
+        <!-- Nuestro Equipo -->
+        <div class="col-md-4">
+            <h2>Equipo</h2>
+            <p>Estamos formados por un equipo diverso de expertos en distintas áreas, comprometidos con la excelencia educativa y el aprendizaje continuo.</p>
+        </div>
+    </div>
+
+    <!-- Sección de Testimonios -->
+    <div class="container my-5 testimonios">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h3>Testimonios</h3>
+                <p class="lead">Lo que dicen nuestros estudiantes:</p>
+            </div>
+            <div class="col-md-6 text-center mb-4">
+                <blockquote class="blockquote">
+                    <p class="mb-0">"Los cursos han transformado mi carrera. Aprendí a mi ritmo y pude aplicar los conocimientos de inmediato."</p>
+                    <footer class="blockquote-footer mt-2">Laura Martínez, Estudiante</footer> <!-- Margen superior para el footer -->
+                </blockquote>
+            </div>
+            <div class="col-md-6 text-center mb-4">
+                <blockquote class="blockquote">
+                    <p class="mb-0">"La calidad del contenido y la atención al cliente son excepcionales. Recomiendo esta plataforma a todos."</p>
+                    <footer class="blockquote-footer mt-2">Andrés Torres, Estudiante</footer> <!-- Margen superior para el footer -->
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sección con imágenes del equipo -->
+    <div class="row my-5">
+        <div class="col-12 text-center">
+            <h3>Conoce a Nuestro Equipo</h3>
+            <p>Un equipo apasionado por la educación.</p>
+        </div>
+        <!-- Ejemplo de miembros del equipo -->
+        <div class="col-md-3 text-center">
+            <img src="{{ url_for('static', filename='img/team1.jpg') }}" class="img-member mb-3" alt="Miembro 1">
+            <h5 class="member-name">Macchia Sebastian</h5>
+            <p class="member-position">CEO y Fundador</p>
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="{{ url_for('static', filename='img/team2.jpg') }}" class="img-member mb-3" alt="Miembro 2">
+            <h5 class="member-name">Ana García</h5>
+            <p class="member-position">Directora de Tecnología</p>
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="{{ url_for('static', filename='img/team3.jpg') }}" class="img-member mb-3" alt="Miembro 3">
+            <h5 class="member-name">Carlos López</h5>
+            <p class="member-position">Instructor Principal</p>
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="{{ url_for('static', filename='img/team4.jpg') }}" class="img-member mb-3" alt="Miembro 4">
+            <h5 class="member-name">María Fernández</h5>
+            <p class="member-position">Especialista en Contenidos</p>
+        </div>
+    </div>
+
+    <!-- Llamado a la acción -->
+    <div class="row my-5 text-center">
+        <div class="col-12">
+            <h4>¿Listo para comenzar tu viaje de aprendizaje?</h4>
+            <a href="/courses" class="btn btn-primary btn-lg">Explora Nuestros Cursos</a>
+        </div>
+    </div>
+
+    </div>
+
+{% endblock %}

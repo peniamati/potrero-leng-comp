@@ -1,0 +1,108 @@
+{% extends "layout.html" %}  <!-- declaro de donde traigo la plantilla -->
+
+{% block content %}
+
+<!-- Contenido principal -->
+<div class="row">
+    <div class="col-12">
+        <h1 class="text-center">Bienvenido a la Plataforma de Cursos Online</h1>
+        <p class="text-center">Aprende a tu propio ritmo desde cualquier lugar</p>
+    </div>
+</div>
+<div class="container my-3">
+    <div class="row">
+        <img src="{{ url_for('static', filename='img/cursos-online.jpg') }}" alt="foto-principal">
+    </div>
+    <div class="row my-3">
+        <!-- Columna izquierda para el h1 -->
+        <div class="col-md-6 d-flex align-items-center">
+            <h2>Descubre nuestros cursos online autodescargables</h2>
+        </div>
+        
+        <!-- Columna derecha para el p y los botones -->
+        <div class="col-md-6">
+            <p>Bienvenido a nuestra plataforma de aprendizaje. Ofrecemos una variedad de cursos autodescargables que se adaptan a tus necesidades y te permiten aprender a tu propio ritmo.</p>
+            
+            <div class="d-flex justify-content-start">
+                <!-- Botón de Explorar cursos -->
+                <a href="{{ url_for('courses') }}" class="btn btn-dark me-2">Explorar</a>
+                <!-- Botón de Registrate -->
+                <a href="#" class="btn btn-primary">Registrate</a>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <h2>Descubre las caracteristicas unicas de nuestros cursos en línea autodescargables.</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <img src="{{ url_for('static', filename='img/cursos.jpeg') }}" alt="">
+            <h3>Aprende a tu ritmo con acceso inmediato a todos los materiales.</h3>
+            <p>Nuestros cursos estan diseñados para adaptarse a tu estilo de vida.</p>
+
+            <!-- Botón de Explorar cursos -->
+            <a href="{{ url_for('courses') }}" class="btn btn-dark">Explorar</a>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <img src="{{ url_for('static', filename='img/banner.jpg') }}" width="60%" alt="">
+            <h3>Contenido descargable que puedes acceder en cualquier momento y lugar.</h3>
+            <p>Disfruta de la flexibilidad de aprender cuando más te convenga.</p>
+
+            <!-- Botón de Explorar cursos -->
+            <a href="{{ url_for('courses') }}" class="btn btn-dark">Ver</a>
+        </div>
+
+        <div class="col-md-4 text-center">
+            <img src="{{ url_for('static', filename='img/cursos-online.jpg') }}" width="60%" alt="">
+            <h3>Certificación al finalizar cada curso para validar tus nuevos conocimientos.</h3>
+            <p>Aumenta tu curriculum con nuestras certificaciones reconocidas en la industria.</p>
+
+            <!-- Botón de Explorar cursos -->
+            <a href="#" class="btn btn-dark">Registrate</a>
+        </div>
+
+    </div>
+
+    <!-- Cards de cursos -->
+
+    <div class="row mt-3">
+        <h2>Explora la gran variedad de cursos</h3>
+        <!-- Cards de cursos -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{{ url_for('static', filename='img/curso-python.jpg') }}" class="card-img-top" alt="Curso 1">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de Python</h5>
+                    <p class="card-text">Aprende Python desde cero con este curso.</p>
+                    <a href="#" class="btn btn-primary">Ver Curso</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{{ url_for('static', filename='img/curso-react.jpg') }}" class="card-img-top" alt="Curso 2">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de React</h5>
+                    <p class="card-text">Domina el desarrollo frontend con React.</p>
+                    <a href="#" class="btn btn-primary">Ver Curso</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{{ url_for('static', filename='img/curso-java.jpg') }}" class="card-img-top" alt="Curso 3">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de Java</h5>
+                    <p class="card-text">Conviértete en un experto en Java.</p>
+                    <a href="#" class="btn btn-primary">Ver Curso</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock%}

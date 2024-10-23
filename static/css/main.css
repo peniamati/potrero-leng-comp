@@ -1,0 +1,279 @@
+/* Diferenciación de los títulos h2 y h3 */
+
+/* Título h2 - más grande y destacado */
+h2 {
+    font-size: 2.2rem;
+    color: #2c3e50; /* Azul oscuro */
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 1px; /* Espaciado de letras para mayor énfasis */
+    border-bottom: 2px solid #3498db; /* Línea decorativa inferior */
+    padding-bottom: 10px;
+}
+
+/* Título h3 - menos prominente */
+h3 {
+    font-size: 1.8rem;
+    color: #2980b9; /* Azul más claro */
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: none; /* Mantener mayúsculas/minúsculas originales */
+}
+
+/* Estilos para la barra de navegación */
+
+/* Cambiar el fondo del nav */
+.navbar {
+    background-color: #8ccddf; /* Azul oscuro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Color del texto del navbar */
+.navbar .navbar-brand, .navbar .nav-link {
+    color: #101010; /* Texto claro */
+}
+
+ .nav-link:hover {
+    color: #ffdd57; /* Color de hover en enlaces */
+}
+
+/* Botones en el nav */
+ .btn-primary {
+    background-color: #071594; 
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #f39c12; 
+}
+
+ .btn-dark {
+    background-color: #101010; 
+}
+
+.btn-dark:hover {
+    background-color: #f39c12; 
+}
+
+/* Estilos para el Footer */
+
+/* Cambiar el fondo del footer */
+footer {
+    background-color: #8ccddf; /* Azul oscuro profundo */
+    color: #ecf0f1; /* Texto claro */
+    padding: 20px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra superior */
+}
+
+/* Estilo para el texto del footer */
+footer p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #bdc3c7; /* Color gris claro */
+}
+
+/* Enlaces en el footer */
+footer a {
+    color: #ffdd57; /* Enlaces en amarillo */
+}
+
+footer a:hover {
+    color: #f39c12; /* Color de hover */
+}
+
+.social-icon {
+    font-size: 24px; /* Tamaño del ícono */
+}
+
+.facebook {
+    color: #3b5998; /* Color de Facebook */
+}
+
+.x-icon {
+    color: #101010; /* Color azul característico de Twitter/X */
+}
+
+.instagram {
+    color: #c32aa3; /* Color de Instagram */
+}
+
+.linkedin {
+    color: #0077b5; /* Color de LinkedIn */
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que el texto esté centrado verticalmente */
+}
+
+/* Estilos adicionales para que el logo y los enlaces sean más accesibles */
+.nav-item {
+    text-decoration: none;
+    list-style: none;
+}
+
+.logo {
+    width: 150px;
+    margin-right: 5px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border: none; /* Quitar borde */
+    display: flex; /* Usar flexbox para alinear el contenido */
+    flex-direction: column; /* Alinear el contenido verticalmente */
+    height: 100%; /* Hacer que la tarjeta ocupe todo el alto del contenedor */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transición suave para hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Desplazamiento hacia arriba */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.card-img-top {
+    object-fit: cover; /* Ajustar la imagen para cubrir el espacio sin deformarla */
+    height: 200px; /* Altura fija para la imagen */
+}
+
+.card-body {
+    display: flex; /* Usar flexbox en el cuerpo de la tarjeta */
+    flex-direction: column; /* Alinear los elementos verticalmente */
+    flex: 1; /* Permitir que el cuerpo crezca para llenar el espacio */
+    justify-content: space-between; /* Distribuir el espacio entre elementos */
+}
+
+.card-title {
+    color: #2c3e50; /* Color de los títulos de las tarjetas */
+    font-weight: bold;
+}
+
+.card-text {
+    color: #7f8c8d; /* Color del texto de las tarjetas */
+}
+
+/* Alinear los botones */
+.btn {
+    margin-top: auto; /* Empujar los botones al final del contenedor */
+}
+
+.img-member {
+    height: 350px; /* Establece una altura fija */
+    object-fit: cover; /* Mantiene la relación de aspecto, recortando si es necesario */
+    border-radius: 50%; /* Asegura que las imágenes sean circulares */
+}
+
+.member-name {
+    font-size: 1.25rem; /* Tamaño de fuente más grande para el nombre */
+    font-weight: bold; /* Negrita para el nombre */
+    color: #2c3e50; /* Color oscuro para contraste */
+    margin-top: 10px; /* Espacio arriba del nombre */
+}
+
+.member-position {
+    font-size: 1rem; /* Tamaño de fuente para el puesto */
+    color: #7f8c8d; /* Color gris para el puesto */
+    margin-bottom: 20px; /* Espacio abajo del puesto */
+}
+
+/* Efecto hover para destacar */
+.col-md-3:hover .member-name,
+.col-md-3:hover .member-position {
+    color: #3498db; /* Cambia el color al pasar el ratón */
+    transition: color 0.3s; /* Suaviza la transición de color */
+}
+
+blockquote {
+    border-left: 4px solid #3498db; /* Línea a la izquierda del testimonio */
+    padding-left: 20px; /* Espaciado dentro del bloque */
+    font-style: italic; /* Estilo itálico para el texto del testimonio */
+}
+.blockquote-footer{
+    color: white;
+    font-style: italic;
+}
+
+.sobre-nosotros {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 50px 20px; /* Espaciado superior e inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.sobre-nosotros h1 {
+    color: #101010; /* Color del título */
+    font-weight: bold; /* Negrita para el título */
+    text-transform: uppercase; /* Mayúsculas para el título */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+.sobre-nosotros p {
+    color: #495057; /* Color del texto */
+    font-size: 1.5rem; /* Tamaño del texto */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.testimonios {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 40px 20px; /* Espaciado superior e inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-top: 30px; /* Margen superior para separación de otras secciones */
+}
+
+.testimonios h3 {
+    color: #007bff; /* Color del título */
+    font-weight: bold; /* Negrita para el título */
+    text-transform: uppercase; /* Mayúsculas para el título */
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+.testimonios blockquote {
+    background-color: #ffffff; /* Fondo blanco para las citas */
+    border-left: 5px solid #007bff; /* Línea lateral azul */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados para las citas */
+    position: relative; /* Posición relativa para evitar superposiciones */
+}
+
+.testimonios footer {
+    font-style: italic; /* Estilo de texto para el pie de la cita */
+    margin-top: 10px; /* Espacio superior para el pie de la cita */
+    display: block; /* Asegura que se comporte como un bloque */
+}
+
+.contacto {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 40px 20px; /* Espaciado superior e inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin-bottom: 100px; /* Espacio adicional para evitar que el footer se superponga */
+}
+
+.contacto h2 {
+    color: #007bff; /* Color del título */
+    font-weight: bold; /* Negrita para el título */
+}
+
+.contacto .form-control {
+    border: 2px solid #007bff; /* Bordes azules */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.contacto .form-control:focus {
+    border-color: #0056b3; /* Color del borde al enfocarse */
+    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5); /* Sombra al enfocar */
+}
+
+.contacto .form-group {
+    margin-bottom: 1.5rem; /* Margen inferior para separación */
+}
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container my-5">
+    <h1 class="text-center mb-4">Nuestros Cursos</h1>
+    <p class="text-center mb-5">Explora nuestra amplia variedad de cursos diseñados para adaptarse a tus necesidades de aprendizaje.</p>
+    
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{{ url_for('static', filename='img/curso-python.jpg') }}" class="card-img-top" alt="Curso de Python">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de Python</h5>
+                    <p class="card-text">Aprende Python desde cero con este curso. Ideal para principiantes.</p>
+                    <a href="#" class="btn btn-primary">Ver Curso</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{{ url_for('static', filename='img/curso-react.jpg') }}" class="card-img-top" alt="Curso de React">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de React</h5>
+                    <p class="card-text">Domina el desarrollo frontend con React. Aprende a construir interfaces interactivas.</p>
+                    <a href="#" class="btn btn-primary">Ver Curso</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{{ url_for('static', filename='img/curso-java.jpg') }}" class="card-img-top" alt="Curso de Java">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de Java</h5>
+                    <p class="card-text">Conviértete en un experto en Java. Aprende a desarrollar aplicaciones robustas.</p>
+                    <a href="#" class="btn btn-primary">Ver Curso</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <h2 class="text-center mb-4">Más Cursos Disponibles</h2>
+        <!-- Card 4 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{{ url_for('static', filename='img/curso-html.jpg') }}" class="card-img-top" alt="Curso de HTML">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de HTML</h5>
+                    <p class="card-text">Desarrolla estructuras de sitios web.</p>
+                    <a href="#" class="btn btn-primary">Ver Curso</a>
+                </div>
+            </div>
+        </div>
+    
+
+
+        <!-- Card 5 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{{ url_for('static', filename='img/curso-css.jpg') }}" class="card-img-top" alt="Curso de CSS">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de CSS</h5>
+                    <p class="card-text">Aprende a diseñar y maquetar páginas web con CSS.</p>
+                    <a href="#" class="btn btn-primary">Ver Curso</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="{{ url_for('static', filename='img/curso-javascript.jpg') }}" class="card-img-top" alt="Curso de JavaScript">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de JavaScript</h5>
+                    <p class="card-text">Domina el lenguaje de programación web más popular.</p>
+                    <a href="#" class="btn btn-primary">Ver Curso</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+</div>
+{% endblock %}
